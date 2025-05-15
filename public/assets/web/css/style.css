@@ -562,6 +562,12 @@ section:has(.overlay) .btn_menuTwo {
     background-color: #232b37;
 }
 
+@media (max-width: 600px) {
+    #comfortable .owl-nav {
+        display: none;
+    }
+}
+
 .owl-nav {
     position: absolute;
     top: 50%; /* Center vertically */

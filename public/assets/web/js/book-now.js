@@ -583,6 +583,7 @@ document.addEventListener("DOMContentLoaded", function () {
             };
 
             saveGuestDetails("personal", guestDetails);
+             this.reset();
         });
 
     document
@@ -611,6 +612,7 @@ document.addEventListener("DOMContentLoaded", function () {
             };
 
             saveGuestDetails("business", guestDetails);
+            this.reset();
         });
 
     function validateRoomSelection() {
@@ -691,6 +693,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         text: data.message || "Something is wrong!",
                     });
                 }
+                
+                
             })
             .catch((error) => {
                 console.log("Error:", error);

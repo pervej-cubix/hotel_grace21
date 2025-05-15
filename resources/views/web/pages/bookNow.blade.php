@@ -225,7 +225,7 @@
                                       </span>
                                   </p>
                               @endif
-                          </div>                          
+                          </div>                         
                         </div>
         
                         <!-- Add Room Button -->

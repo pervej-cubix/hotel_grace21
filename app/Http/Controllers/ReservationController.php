@@ -62,7 +62,7 @@ class ReservationController extends Controller
             $mailData = $reservation->toArray();
 
             // Send to admin
-            Mail::to('pervej@cubixbd.com')->send(new ReservationMail($mailData));
+            Mail::to('online_reservation@hotelgrace21.com')->send(new ReservationMail($mailData));
 
             // Send to guest
             Mail::to($reservation->email)->send(new ReservationReceived($mailData)); 
