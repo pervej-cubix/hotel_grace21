@@ -120,27 +120,27 @@
             
                 <h6>Room Rack Rate</h6>
             
-                <div class="price-row">
+                <div class="price-row justify-content-center">
                     @if ($discountedRate > 0)
                         {{-- Rack rate with line-through --}}
                         <h3 style="font-size: 16px;">
-                            <span style="text-decoration: line-through;">{{ $usdRackRate }}</span>
+                            <span style="text-decoration: line-through;">{{ $rackRate }}</span>
                             <span style="font-size: 15px; font-weight: 600;">&nbsp;USD</span>
                         </h3>
-                        <h3 style="font-size: 16px;">
+                        {{-- <h3 style="font-size: 16px;">
                             <span style="text-decoration: line-through;">{{ $rackRate }}</span>
                             <span style="font-size: 15px; font-weight: 600;">&nbsp;BDT</span>
-                        </h3>
+                        </h3> --}}
                     @else
                         {{-- Rack rate normally --}}
-                        <h3 style="font-size: 16px;">
-                            {{ $usdRackRate }}
+                        <h3 class="text-center" style="font-size: 16px;">
+                            {{ $rackRate }}
                             <span style="font-size: 15px; font-weight: 600;">USD</span>
                         </h3>
-                        <h3 style="font-size: 16px;">
+                        {{-- <h3 style="font-size: 16px;">
                             {{ $rackRate }}
                             <span style="font-size: 15px; font-weight: 600;">BDT</span>
-                        </h3>
+                        </h3> --}}
                     @endif
                 </div>
             
@@ -149,9 +149,9 @@
                 <div class="price-row justify-content-center gap-2">
                     @if ($discountedRate > 0)
                         {{-- Show discounted price --}}
-                        <h3>{{ $usdDiscountedRate }}
+                        {{-- <h3>{{ $usdDiscountedRate }}
                             <span style="font-size: 16px; font-weight: 600;">USD</span>
-                        </h3>
+                        </h3> --}}
                         <h3>{{ $discountedRate }}
                             <span style="font-size: 16px; font-weight: 600;">BDT</span>
                         </h3>

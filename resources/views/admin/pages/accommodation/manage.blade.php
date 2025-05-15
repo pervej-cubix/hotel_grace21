@@ -28,7 +28,7 @@
                                 <th class="border-bottom-0">Room Size</th>
                                 <th class="border-bottom-0">No of Room</th>
                                 <th class="border-bottom-0">Occupancy</th>
-                                <th class="border-bottom-0">Room Rake Rate</th>
+                                <th class="border-bottom-0">Room Rack Rate</th>
                                 <th class="border-bottom-0">Description</th>
                                 <th class="border-bottom-0">Image</th>
                                 <th class="border-bottom-0">Accommodation Gallaries</th>
@@ -45,7 +45,7 @@
                                 <td>{{ $accomodation->roomSize }}</td>
                                 <td>{{ $accomodation->noRoom }}</td>
                                 <td>{{ $accomodation->occupancy }}</td>
-                                <td>{{ $accomodation->rakeRate }}</td>
+                                <td>{{ $accomodation->rackRate }}</td>
                                 <td>{{ $accomodation->description }}</td>
                                 <td><img src="{{ asset($accomodation->image) }}" alt="" width="40" height="60"></td>
                                 <td>

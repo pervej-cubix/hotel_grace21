@@ -207,21 +207,21 @@
                               @if($accomodation->discountedRate > 0)
                                   <p class="card-text">
                                       <strong>Rack Rate:</strong> 
-                                      ৳<span class="text-decoration-line-through" style="letter-spacing: 1px; font-size: 17px;">
-                                          {{ $accomodation->rackRate }}
+                                      <span class="text-decoration-line-through" style="letter-spacing: 1px; font-size: 17px;">
+                                          ${{ $accomodation->rackRate }}
                                       </span>
                                   </p>
                                   <p class="card-text">
                                       <strong>After Discount:</strong> 
-                                      ৳<span style="letter-spacing: 1px;">
-                                          {{ $accomodation->discountedRate }}
+                                     <span style="letter-spacing: 1px; font-size: 17px;">
+                                           ${{ $accomodation->discountedRate }}
                                       </span>
                                   </p>
                               @else
                                   <p class="card-text">
                                       <strong>Rack Rate:</strong> 
-                                      ৳<span style="letter-spacing: 1px;">
-                                          {{ $accomodation->rackRate }}
+                                      <span style="letter-spacing: 1px; font-size: 17px;">
+                                          ${{ $accomodation->rackRate }}
                                       </span>
                                   </p>
                               @endif
